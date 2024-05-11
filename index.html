@@ -1,0 +1,113 @@
+<html>
+   <head>
+    <style>
+      #div1{
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         background-color: red;
+         position: absolute;
+         top: 20%;
+         left: 10%;
+         display: inline-block;
+         animation-name: anim1;
+         animation-duration: 3s;
+         animation-direction: normal;
+         animation-iteration-count: infinite;
+
+      }
+
+      @keyframes anim1{
+         0%{transform: translateY(20px); background-color: aqua;}
+         25%{transform: translateY(40px); background-color: red;}
+         50%{transform: translateY(60px); background-color:pink;}
+         75%{transform: translateY(80px); background-color: aqua;}
+         100%{transform: translateY(100px); background-color:black;}
+      }
+
+      #div2{
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         background-color: aqua;
+         position: absolute;
+         top: 40%;
+         left: 10%;
+         display: inline-block;
+         animation-name: anim2;
+         animation-duration: 3s;
+         animation-direction:reverse;
+         animation-iteration-count: infinite;
+         margin-left: 7%;
+
+      }
+
+      @keyframes anim2{
+         0%{transform: translateY(30px); background-color:pink;}
+         25%{transform: translateY(40px); background-color:rebeccapurple;}
+         75%{transform: translateY(60px); background-color: blue;}
+         75%{transform: translateY(80px); background-color: red;}
+         100%{transform: translateY(100px); background-color:yellow;}
+
+      }
+
+      #div3{
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         background-color: aqua;
+         position: absolute;
+         top: 30%;
+         left: 10%;
+         display: inline-block;
+         animation-name: anim3;
+         animation-duration: 3s;
+         animation-direction:alternate;
+         animation-iteration-count: infinite;
+         margin-left: 15%;
+
+      }
+
+      @keyframes anim3{
+         0%{transform: translateY(30px); background-color:aqua;}
+         25%{transform: translateY(-40px); background-color:gray;}
+         75%{transform: translateY(60px); background-color: blue;}
+         75%{transform: translateY(80px); background-color: red;}
+         100%{transform: translateY(100px); background-color:yellow;}
+
+      }
+
+      #div4{
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         background-color: aqua;
+         position: absolute;
+         top: 30%;
+         left: 10%;
+         display: inline-block;
+         animation-name: anim4;
+         animation-duration: 3s;
+         animation-direction:alternate-reverse;
+         animation-iteration-count: infinite;
+         margin-left: 10%;
+
+      }
+
+      @keyframes anim4{
+         0%{transform: translateY(30px); background-color:blue;}
+         25%{transform: translateY(-40px); background-color:pink;}
+         75%{transform: translateY(60px); background-color: aquamarine;}
+         75%{transform: translateY(80px); background-color: green;}
+         100%{transform: translateY(100px); background-color:brown;}
+
+      }
+  </style>
+   </head>
+   <body>
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+   </body>
+</html>
